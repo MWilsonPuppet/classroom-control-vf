@@ -57,3 +57,8 @@ exec {"cowsay 'Welcome to ${::fqdn}!' > /etc/motd" :
      path    => '/usr/local/bin',
    }
  }
+ 
+ host { 'testing.puppetlabs.vm':
+  ip => '127.0.0.1',
+  }
+}
